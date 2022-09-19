@@ -15,6 +15,6 @@ Sem Grade: 72   Final Exam: 100   Exam worth: 20%    Overall: 77.6
 semGrade = float(input("What is the semester grade?"))
 finExam = float(input("What is the final exam's grade?"))
 examW = float(input("What is the exam worth?"))
-Percent = examW*100
-Overall = ((finExam*examW)+((1-examW)*semGrade))
+Percent = float(examW/100)
+Overall = ((finExam*Percent)+((1-Percent)*semGrade))
 print(Overall)
